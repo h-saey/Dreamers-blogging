@@ -25,6 +25,8 @@ CREATE TABLE blogposts (
     FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
+📄 Table: users
+sql
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL,
@@ -32,7 +34,8 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+📄 Table: contact_messages
+sql
 CREATE TABLE contact_messages (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
@@ -40,7 +43,17 @@ CREATE TABLE contact_messages (
     message TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+📄 Table: comments
+sql
+CREATE TABLE comments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    post_id INT NOT NULL,
+    user_id INT NOT NULL,
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (post_id) REFERENCES blogposts(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
 
 
 ## 🚀 Getting Started
