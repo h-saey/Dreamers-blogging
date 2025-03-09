@@ -1,0 +1,1202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --my_red: #7b3131;
+}
+
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-uniquifier {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-image: linear-gradient(to right, #031425, #7b3131);
+}
+
+/* Navbar CSS */
+nav {
+  background-image: linear-gradient(to right, #031425, #7b3131);
+  height: 90px;
+  padding: 10px 0;
+}
+
+.logo img {
+  max-width: 180px; /* Scales down on smaller screens */
+}
+
+.navbar-nav .nav-item {
+  padding: 0 15px;
+  font-size: 1.125rem;
+}
+
+.navbar-nav .nav-link {
+  transition: 0.3s ease;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid burlywood;
+  color: burlywood;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    background-color: rgba(3, 20, 37, 0.9); /* Semi-transparent background */
+    padding: 10px 0;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-link:hover {
+    border: none;
+    color: white;
+    background-color: #5a1a1a;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+}
+
+/*---------------------------------------------------------------------- Slider CSS */
+.slider {
+  background-image: url(Pics/galaxy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.opaque {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-content h1 {
+  font-family: "Cookie", cursive;
+  font-size: 8rem;
+  color: white;
+  font-weight: 500;
+}
+
+.slider-content {
+  width: 70%;
+  text-align: center;
+  margin-bottom: -90px;
+}
+
+.slider-content button {
+  padding: 15px 30px;
+  color: white;
+  background-color: var(--my_red);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.slider-content button:hover {
+  outline: 2px solid white;
+  background-color: transparent;
+}
+@media (max-width: 440px) {
+  .slider-content h1 {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .slider-content button {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-content h1 {
+    font-size: 5rem; /* Smaller font size for mobile */
+  }
+
+  .slider-content button {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 990px) {
+  .slider-content h1 {
+    font-size: 6rem; /* Smaller font size for mobile */
+  }
+
+  .slider-content button {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+/*--------------------------------------------------- What We Provide CSS ------------------------*/
+.provide {
+  height: 80vh;
+}
+
+.side-img {
+  background-image: url(Pics/Autumn_diary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.side-img .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #250306);
+}
+
+.right-provides {
+  color: white;
+}
+
+.right-provides h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem; /* Responsive font size */
+}
+
+.right-provides .explanation i {
+  background-color: white;
+  color: var(--my_red);
+  padding: 15px;
+  border-radius: 100%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.right-provides .heading {
+  font-size: 1.5rem; /* Responsive font size */
+  font-weight: 700;
+}
+
+.right-provides .provide_explanation {
+  margin-left: 90px;
+  font-size: 1rem; /* Responsive font size */
+  width: 80%;
+  padding: 0;
+}
+
+/*------------------------------------------------------------------------ Teams css */
+.sectioni {
+  padding: 40px;
+}
+
+.teams {
+  padding: 35px;
+}
+
+.sectioni h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.person {
+  position: relative;
+  overflow: hidden;
+}
+
+.person_img {
+  height: 300px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.person_img:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  color: white;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.img_opaque {
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease-in;
+}
+
+.person_img:hover .img_opaque {
+  opacity: 1;
+}
+
+.img_opaque p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.person:nth-child(odd) {
+  transform: translateY(-20px);
+}
+.person:nth-child(even) {
+  transform: translateY(50px);
+}
+
+@media (max-width: 576px) {
+  .person:nth-child(odd) {
+    transform: translateY(0px);
+  }
+  .person:nth-child(even) {
+    transform: translateY(0px);
+  }
+  .person {
+    display: flex;
+    align-items: center;
+  }
+  .description {
+    margin-left: 20px;
+  }
+  .person_img {
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+  }
+  .img_opaque {
+    border-radius: 20%;
+  }
+  .teams {
+    padding: 0px;
+  }
+}
+
+/*---------------------------------------------------------------------- Testimonials */
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 25px;
+  border-radius: 20px;
+  color: white;
+  margin: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 350px;
+}
+
+.review:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.profile .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.profile_img {
+  width: 70px;
+  height: 70px;
+  border: 4px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-image: url(Pics/Autumn_diary.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rating i {
+  color: rgb(184, 184, 40);
+}
+
+.profile_message {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review {
+    padding: 20px;
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .profile_img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* --------------------------------------------------------------About us CSS-----------------------------------*/
+
+.sectioni {
+  padding: 40px;
+}
+
+.about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_explanation {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 30px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about_us .btn {
+  width: fit-content;
+  padding: 9px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--my_red);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5a1a1a;
+  outline: 2px solid white;
+  background-color: transparent;
+}
+.my_pic {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-image: url(Pics/galaxy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------Last Section */
+
+.last_section {
+  min-height: auto;
+  padding: 40px 20px;
+}
+
+.last h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left_last,
+.right_last {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.right_last p {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  padding: 15px;
+  resize: none;
+  font-size: 18px;
+  color: var(--my_red);
+  margin-bottom: 10px;
+  background: white;
+}
+
+textarea::placeholder {
+  color: #2503068e;
+}
+.btn {
+  background-color: var(--my_red);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  outline: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+@media (min-width: 990px) {
+  .left_last,
+  .right_last {
+    text-align: left;
+  }
+}
+
+/* -----------------------------------------------------------------------------Footer CSS */
+
+/* Footer Section */
+footer {
+  background-color: #031425;
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 40px;
+  color: white;
+}
+
+/* Footer Mid Section */
+.footer_mid {
+  width: 20%;
+  font-size: 40px;
+  text-align: center;
+}
+
+.footer_mid p {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.footer_mid div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer_mid i {
+  cursor: pointer;
+  font-size: 40px;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.footer_mid i:hover {
+  color: burlywood;
+  transform: scale(1.2);
+}
+
+.footer_right {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.footer_right ul {
+  list-style-type: none;
+  margin: 0 15px;
+  line-height: 30px;
+}
+
+.footer_right ul .list-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 4px solid var(--my_red);
+  margin-bottom: 10px;
+}
+
+.footer_right li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer_right li:hover {
+  transform: translateX(4px);
+  transition: transform 0.25s ease, color 0.3s ease-in-out;
+  color: rgb(231, 180, 113);
+}
+
+.footer_last {
+  width: 20%;
+  height: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_mid,
+  .footer_right,
+  .footer_last {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer_right {
+    justify-content: center;
+  }
+}
+@media (max-width: 567px) {
+  .footer_left {
+    display: none;
+  }
+  .footer_right {
+    flex-wrap: wrap;
+  }
+}
+
+.copyright-bar {
+  background-color: var(--my_red);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.copyright-bar p {
+  margin: 0;
+}
+
+/*-------------------------------------------------------------------- About us CSS--------------------------------- */
+
+.my_about {
+  background-color: rgba(255, 255, 255, 0.934);
+  padding: 30px;
+  margin-top: 100px;
+  border-radius: 20px;
+  color: #031425;
+}
+.my_about h1 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--my_red);
+}
+.abt_name {
+  border: var(--my_red) 3px solid;
+  padding: 20px;
+  display: inline-block;
+  margin: 10px 0;
+  color: #031425;
+}
+.about_img,
+.about_img2 {
+  background-image: url("Pics/galaxy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.quotation {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #7b3131;
+  font-style: italic;
+}
+
+/* Chat gpt generated style ---------------------------------------------*/
+.about-section {
+  text-align: center;
+  padding: 50px;
+}
+.team-member {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(230, 228, 228, 0.998);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.abt_name {
+  border: #7b3131 3px solid;
+  padding: 5px 10px;
+  display: inline-block;
+  color: #031425;
+  margin-bottom: 10px;
+}
+.content {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+.quotation {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7b3131;
+  font-style: italic;
+}
+.about_img {
+  background: url("Pics/galaxy.png") no-repeat center center/cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* -------------------------------------------------------Contact us CSS---------------------------------------------- */
+
+.cont_outer {
+  padding-top: 10px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+.cont_inn1 {
+  height: 100%;
+  width: 60%;
+  background-image: url(Pics/rose_onabook.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.cont_inn2 {
+  /* background-image: url(https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-busine_1258-52754.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: transparent;
+  font-family: "Serif", sans-serif;
+  justify-content: center;
+  border: 1px solid #f5ebdc;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #fdedd6;
+  margin-bottom: 5px;
+}
+
+.contact-form h2 i {
+  font-style: italic;
+}
+
+.contact-form label {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #f5ebdc;
+  border: none;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 3px 10px 10px 0;
+}
+
+.contact-form textarea {
+  border-radius: 15px;
+  height: 20%;
+}
+
+.contact-form button {
+  display: block;
+  margin-top: 10px;
+  background: #f5ebdc;
+  border: none;
+  color: #703728;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e0d0c0;
+}
+
+/* -----------------------------------------------------------------Sign up CSS -------------------------*/
+
+.register-card {
+  background-color: #f8f1e9;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.register-card h2 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--my_red);
+}
+.btn-signup {
+  background-image: linear-gradient(to right, #031425, #7b3131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  width: 150px;
+}
+
+.btn-signup:hover {
+  background-image: none;
+  background-color: var(--my_red);
+  color: white;
+}
+.signup-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #8b0000;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------Log In CSS-------------------------------------------------------------- */
+
+.login-card {
+  background-color: #f8f1e9;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--my_red);
+}
+
+.form-label {
+  color: var(--my_red);
+  font-weight: bold;
+}
+
+.form-control {
+  background-image: linear-gradient(to right, #031425, #7b3131);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  background-color: #2d1a1a;
+  color: #fff;
+  border-color: #8b0000;
+  box-shadow: 0 0 5px #8b0000;
+}
+
+.btn-login {
+  background-image: linear-gradient(to right, #031425, #7b3131);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  width: 150px;
+}
+
+.btn-login:hover {
+  background-image: none;
+  background-color: var(--my_red);
+  color: white;
+}
+.login-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #8b0000;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------privacy policy CSS------------------------------------------ */
+.privacy-section {
+  text-align: center;
+  padding: 50px;
+  background: rgba(230, 228, 228, 0.998);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+.privacy-section h1 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--my_red);
+}
+
+.last-updated {
+  font-style: italic;
+  color: #7b3131;
+  margin-bottom: 20px;
+}
+
+.policy-content {
+  text-align: left;
+}
+
+.policy-item {
+  border-left: 5px solid #7b3131;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.policy-item h2 {
+  color: #031425;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.policy-item p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* ----------------------------------------------Blogs list CSS---------------------------------------- */
+.blog-lists {
+  margin-top: 100px;
+  color: white;
+}
+.blog-lists h1 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+.blog-preview {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  max-width: 95%;
+}
+.blog-lists .blog-img {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  border-radius: 10px;
+}
+.blog-lists a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.blog-lists a:hover {
+  text-decoration: underline;
+}
+
+.blog {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+/* ----------------------------------------blog_1 posts------------------------------------------ */
+.blog-container {
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(230, 228, 228, 0.998);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.blog-container .post-time {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--my_red);
+}
+.blog-container h1 {
+  text-align: left;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--my_red);
+}
+.blog-content h2 {
+  color: var(--my_red);
+  margin: 20px 0;
+  text-align: left;
+  font-weight: bold;
+}
+.blog-content {
+  padding: 20px 50px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+.blog-content img {
+  max-width: 100%; /* Ensures image never overflows */
+  height: auto; /* Keeps aspect ratio */
+  margin-bottom: 40px;
+  display: block;
+  margin: auto;
+}
+.blog-content img {
+  max-width: 100%; /* Ensures image never overflows */
+  height: auto; /* Keeps aspect ratio */
+  display: block; /* Removes extra space below inline images */
+  margin: 10px auto; /* Centers the image */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.blog-content ul {
+  text-align: left;
+  padding-left: 50px;
+  list-style-type: none;
+}
+.blog-content ul li::before {
+  content: "➤";
+  margin-right: 6px;
+  color: var(--my_red);
+  font-size: 20px;
+  font-weight: bold;
+}
+.blog-content li {
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------------Comment section CSSS */
+
+.comment-section {
+  max-width: 100%;
+  margin: auto;
+  background-color: rgba(230, 228, 228, 0.998);
+}
+.comment-section h2 {
+  color: var(--my_red);
+  margin: 20px 0;
+  text-align: left;
+  font-weight: bold;
+}
+.comment-section .btn {
+  max-width: 200px;
+}
+.form-control {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  border-radius: 8px;
+}
+
+.comments-list ul {
+  padding: 0;
+}
+
+.comments-list li {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+  border-left: 4px solid var(--my_red);
+}
+
+/* ----------------------------------------------ADMIN Panel CSS-------------------------------------------- */
+
+.admin {
+  margin-top: 30px;
+}
+.admin h1 {
+  text-align: center;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: #031425;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.sidebar button {
+  width: 100%;
+  padding: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.sidebar i {
+  padding: 5px;
+}
+.sidebar button:hover,
+.sidebar button.active {
+  background-color: #34495e;
+}
+
+#blogs h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "oswald", sans-serif;
+}
+#blogs button {
+  margin-top: 1em;
+  margin-right: 1em;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 10px;
+  color: var(--my_red);
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.25s ease-in;
+}
+#blogs button:hover {
+  color: white;
+  outline: 1px solid white;
+  background-color: transparent;
+}
+.content {
+  width: 80%;
+  padding: 20px;
+}
+.section {
+  display: none;
+  padding-top: 0;
+}
+.active {
+  display: block;
+}
+.accordion-content {
+  display: none;
+  margin-top: 20px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
