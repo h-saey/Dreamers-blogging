@@ -60,9 +60,7 @@ CREATE TABLE comments (
 1. Clone the repository:
 git clone https://github.com/h-saey/Dreamers-blogging
 
-markdown
-Copy
-Edit
+
 2. Import the database (`blogging_dreamers.sql`) into **phpMyAdmin**.
 3. Update the database connection in `config.php`.
 4. Run the website on **XAMPP**.
